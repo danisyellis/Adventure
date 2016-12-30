@@ -1,0 +1,19 @@
+-add an app-wide controller- unless it should be a factory or directive?
+-should all of these controllers, etc. be in main.js or files with the pages?
+-fix pageOne code (the player stuff)
+-copy everything over bit by bit- checking for things that are hard-coded
+
+-make a new favicon and then uncomment server/app.js line 21
+
+
+
+
+
+
+
+
+
+
+
+add processing stuff :-)
+see if I should use socket.io for anything cause it's easy to add

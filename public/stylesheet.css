@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  /*  background: #fdfdfd;
+*/
+  background-color: #eee6ff; }
+
+#main {
+  margin: 0 auto; }
+
+
+
+
+
+#home .main-home {
+  /*    position: relative;
+*/
+  overflow: hidden; }
+
+#home a {
+  color: grey; }
+
+#home h1 {
+  padding: 200px;
+  position: relative;
+  z-index: 2;
+  text-align: center; }
+
+#home img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: 100%;
+  height: auto;
+  opacity: .9; }
+
+
+
+.room {
+  padding: 30px;
+  color: #33334d; }
+  .room img {
+    width: 100%;
+    margin-top: 20px; }
+  .room button {
+    background-color: #b3ffe6; }
+
+.showing {
+  padding: 30px; }
+
+#flyingPic {
+  height: 800px; }
+
+#glow {
+  padding: 100px; }
