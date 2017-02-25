@@ -1,4 +1,4 @@
-//this isn't being used right now
+//this isn't being used right now, but will be if I add a backend
 
 var router = require("express").Router();
 

@@ -1,4 +1,10 @@
--add an app-wide controller- unless it should be a factory or directive?
+
+//make the state controllers work in their own files- look at old project
+//make sure that file is never getting touched. If so, get rid of it.
+
+
+
+-add an app-wide controller
 -should all of these controllers, etc. be in main.js or files with the pages?
 -fix pageOne code (the player stuff)
 -copy everything over bit by bit- checking for things that are hard-coded
