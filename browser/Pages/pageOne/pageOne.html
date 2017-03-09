@@ -13,19 +13,10 @@
               --- {{itemChoice}}
 
    <h3>and quickly hurry:
-    	<button type="submit" ng-click="player.addLoot(itemChoice)" ui-sref="color">deeper in</button>
+<!--    add the random directive to choose a random inside or outside room
+ -->    	
+      <button type="submit" ng-click="player.addLoot(itemChoice)" ui-sref="color">deeper in</button>
       <button type="submit" ng-click="player.addLoot(itemChoice)" ui-sref="ledge2">outside</button>
 </h3>
 </form>
 </div>
-
-<!-- 
-12/9: use ng-model (add an ng-controller to the html?) use this for reference if needed: http://www.learn-angular.org/#!/lessons/two-way-bindings
-
-make a form with a drop down menu of the various items  (submit button should say ...) 
-	ng-click calls the addItem function and the add the rest of the text function http://stackoverflow.com/questions/16813945/how-to-add-many-functions-in-one-ng-click
-create a post route for whichever item is selected
-	whi
-
-the other function adds the last bit of text   (ng-show vs. hide?), with links to 2 new pages
-	each link has a ui-sref on it -->

@@ -51,7 +51,7 @@ app.config(function ($stateProvider) {
 app.controller("colorCtrl", function ($scope, $state) {
     setTimeout(function () {
         $state.go("pageOne");
-    }, 20000);
+    }, 40000);
 });
 
 // app.controller("colorCtrl", function ($scope, $state) {
@@ -82,11 +82,9 @@ app.config(function ($stateProvider) {
 
 app.controller('FlyCtrl', function ($scope, Player) {
     $scope.hasStick = function () {
-        for (var i = 0; i < Player.loot.length; i++) {
-            if (Player.loot[i] === "stick") {
+            if($scope.itemChoice = "stick")
                 return true;
-            }
-        }
+        } else {
         return false;
     };
 });
@@ -99,56 +97,36 @@ app.config(function ($stateProvider) {
     });
 });
 
-app.controller("playerCtrl", function ($scope) {
-    //$scope.player = new Player();
-    $scope.itemChoice;
-});
-
-
-//probably don't want this player object anymore, because it's easier with angular to have any variables be on the session, I think
-// var Player = function Player() {
-//     this.loot = [];
-// };
-
-// Player.prototype.addLoot = function (item) {
-//     this.loot.push(item);
-//     console.log(this.loot);
-//     //I may want to refactor this.loot into an object at some point for better optimization
-// };
-
-// Player.prototype.write = function () {
-//     console.log("Hi");
-// };
 
 
 
 
 
 
-//use this later for random inside or outside room
-// app.factory('RandomGreetings', function () {
+//finish making this that will choose a random inside or outside room
+// app.factory('RandomRoom', function () {
 
 //     var getRandomFromArray = function getRandomFromArray(arr) {
 //         return arr[Math.floor(Math.random() * arr.length)];
 //     };
 
-//     var greetings = ['Hello, world!', 'At long last, I live!', 'Hello, simple human.', 'What a beautiful day!', 'I\'m like any other project, except that I am yours. :)', 'This empty string is for Lindsay Levine.', 'こんにちは、ユーザー様。', 'Welcome. To. WEBSITE.', ':D', 'Yes, I think we\'ve met before.', 'Gimme 3 mins... I just grabbed this really dope frittata', 'If Cooper could offer only one piece of advice, it would be to nevSQUIRREL!'];
+//     var rooms = [];
 
 //     return {
-//         greetings: greetings,
-//         getRandomGreeting: function getRandomGreeting() {
-//             return getRandomFromArray(greetings);
+//         rooms: rooms,
+//         getRandomRoom: function getRandomRoom() {
+//             return getRandomFromArray(rooms);
 //         }
 //     };
 // });
 
-// app.directive('randoGreeting', function (RandomGreetings) {
+// app.directive('randoRoom', function (RandomRooms) {
 
 //     return {
 //         restrict: 'E',
-//         templateUrl: 'js/common/directives/rando-greeting/rando-greeting.html',
+//         templateUrl: '',
 //         link: function link(scope) {
-//             scope.greeting = RandomGreetings.getRandomGreeting();
+//             scope.room = RandomRooms.getRandomRoom();
 //         }
 //     };
 // });
