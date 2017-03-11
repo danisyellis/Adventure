@@ -1,2 +1,16 @@
 -make a new favicon and then uncomment server/app.js line 21
 
+git push -u https://github.com/danisyellis/Adventure.git
+danisyellis@RXL ~/Projects/Adventure (adventure) $ git branch branch_name --set-upstream-to https://github.com/danisyellis/Adventure.git
+fatal: branch 'branch_name' does not exist
+danisyellis@RXL ~/Projects/Adventure (adventure) $ git branch adventure --set-upstream-to https://github.com/danisyellis/Adventure.git
+error: the requested upstream branch 'https://github.com/danisyellis/Adventure.git' does not exist
+hint: 
+hint: If you are planning on basing your work on an upstream
+hint: branch that already exists at the remote, you may need to
+hint: run "git fetch" to retrieve it.
+hint: 
+hint: If you are planning to push out a new local branch that
+hint: will track its remote counterpart, you may want to use
+hint: "git push -u" to set the upstream config as you push.
+

@@ -82,10 +82,11 @@ app.config(function ($stateProvider) {
 
 app.controller('FlyCtrl', function ($scope, Player) {
     $scope.hasStick = function () {
-            if($scope.itemChoice = "stick")
+            if ($scope.itemChoice === "stick") {
                 return true;
         } else {
         return false;
+        }
     };
 });
 
